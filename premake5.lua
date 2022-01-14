@@ -22,7 +22,8 @@ project "ImGui"
 
     defines
     {
-        IMGUI_IMPL_OPENGL_LOADER_CUSTOM 
+        IMGUI_IMPL_OPENGL_LOADER_CUSTOM
+        IMGUI_API = __declspec(dllexport)       -- Windows specific!!!
     }
 
 	filter "system:windows"
